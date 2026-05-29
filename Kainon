@@ -1,0 +1,22 @@
+
+const KainGame = {
+  base: "Six-Guns FULL - جميع المراحل والخرائط",
+  clean: "حذف جميع الصلبان والرموز الدينية نهائياً",
+  pay: "تحميل مجاني | فتح اللعبة كاملة: 5 دولار | متجر داخلي",
+  hero: "كاين - وسيم، جاد، طاغي الجمال",
+  map: "إضافة نهر | حصان أبيض مجاني",
+  audio: "أصوات وموسيقى جديدة عالية الجودة"
+};
+
+function startGame() {
+  alert("تم تحميل اللعبة بنجاح ✅");
+  unlockAllLevels();
+  removeAllCrosses();
+}
+
+function payNow() {
+  sendPayment(5, "1591668101");
+  openFullGame();
+}
+
+startGame();
